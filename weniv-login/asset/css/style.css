@@ -1,0 +1,138 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+fieldset {
+  border: none;
+}
+
+/* screen-only */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* clearfix */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* main */
+
+html {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 12px;
+}
+
+.login_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_form {
+  padding: 20px 16px 18px;
+  width: 350px;
+  height: 140px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.login_welcome {
+  margin-bottom: 15px;
+}
+
+.login_link {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 17px;
+  width: 318px;
+  height: 40px;
+  background-color: #711bff;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.login_link:hover {
+  background-color: #5717bf;
+}
+
+.weniv_logo {
+  display: inline-block;
+  height: 18px;
+  vertical-align: text-bottom;
+}
+
+/* 사용자 서비스(아이디/비밀번호 찾기) */
+
+.login_find {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #676767;
+}
+
+.login_find ul::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-lock.svg);
+}
+
+.login_find ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.divider {
+  display: inline-block;
+  margin: 0 4px;
+  width: 1px;
+  height: 12px;
+  background-color: #676767;
+  vertical-align: middle;
+}
+
+/* 회원가입 */
+
+.login_join::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-user.svg);
+  vertical-align: text-bottom;
+}
